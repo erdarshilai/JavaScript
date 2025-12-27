@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    #cannot redeclare and reinitialize the variable using const
+    <script>
+        const a=10;
+        function f(){
+            a=9;
+            console.log(a);
+        }
+        f();
+    </script>
+    <script>
+        const b=5;
+        function f1(){
+            const b=10;
+            console.log(b);  
+        }
+        f1();
+        console.log(b);
+    
+    </script>
+    <!-- <script>
+        function f2(){
+           const a=10;
+             a=20;
+            const a=30
+            console.log(a); 
+        }
+        f2();
+    </script> -->
+</body>
+</html>
