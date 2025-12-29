@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">Hello world</div>
+    <script>
+        function fun(bg,ct,fs="50px",ft="italic"){
+            i=document.getElementById("id1")
+            i.style.backgroundColor=bg;
+            i.style.color=ct;
+            i.style.fontSize=fs;
+            i.style.fontStyle=ft;
+        }
+
+    </script>
+            <input type="button" onclick="fun('red','green')" value="clickMe"/>
+
+</body>
+</html>

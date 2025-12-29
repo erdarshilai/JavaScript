@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert("this is a warning message")
+        //document.write("warning");
+        // prompt("message","default value")
+        function warn(){
+        res=confirm("do you want to continue");
+        if(res==true){
+            document.write("user wants to continue");
+            return true;
+        }
+        else{
+            document.write("user do not wants to continue");
+            return false;
+        }
+    }
+    </script>
+     <input type="button" value="ok" onclick="warn()">
+</body>
+</html>
