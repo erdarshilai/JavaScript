@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="ti.jpg" height="500px" width="810px">
+    <br></br>
+    <button onclick="fun()">li</button>
+   
+    <button onclick="fun1()">ki</button>
+    <br/>
+
+    <script>
+        function fun(){
+            var x=document.getElementById("img1");
+            x.setAttribute("src","li.jpg");
+        }
+        function fun1(){
+            var x=document.getElementById("img1");
+            x.setAttribute("src","ki.jpg");
+        }
+    </script>
+</body>
+</html>

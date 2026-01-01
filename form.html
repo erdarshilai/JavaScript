@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+        Name:<input type="text" id="id1" value="sdf">
+        email:<input type="email" id="id2" value="sdf@fghgf">
+        <!-- phone no:<input type="number" id="id3" value=""> -->
+        <!-- reset<input type="reset" id="id4" > -->
+        submit<input type="submit" id="id5" onclick="fun1()">
+   
+    <script>
+        function fun1(){
+           var x=  document.getElementById("id1").getAttribute("value")
+           var y=  document.getElementById("id2").getAttribute("value")
+
+            alert(`name= ${x} and email: ${y}`);
+        }
+        
+    </script>
+</body>
+</html>

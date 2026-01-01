@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>paragraph</p>
+    <h1 class="c1"> this is h1 tag </h1>
+    <h2 class="c1"> this is h2 tag </h2>
+    <input type="button" value="clickhere" onclick="fun1()"/>
+    <script>
+        function fun1(){
+            var x=document.querySelector("p")
+            x.style.color="pink";
+            var y=document.querySelectorAll(".c1")
+            y[0].style.color="orange";
+            y[1].style.color="red"
+            
+        }
+    </script>
+
+</body>
+</html>
