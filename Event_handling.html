@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick event -->
+    <h1 onclick="fun1()">click herree</h1>
+    <script>
+        let fun1=()=>{
+            var x=document.querySelector("h1");
+            x.style.fontSize="50px";
+            x.style.color="red"; 
+        }
+    </script>
+     <!-- onclick event using this keyword -->
+      <h1 onclick="fun2(this)">click meeeee</h1>
+    <script>
+        let fun2=(e)=>{
+            e.style.fontSize="70px";
+            e.style.color="green"; 
+        }
+    </script>
+    <!-- onclick in very short method -->
+    <h1 onclick="this.style.color='blue'; this.style.fontSize='90px'">
+        click on me
+    </h1>
+
+
+    <!-- onmous up and onmousedown event handeling-->
+     <h1 onmousedown="this.style.color='pink'" onmouseup="this.style.color='green'">
+        this is h1 tag
+     </h1>
+     <div style="height: 200px; width: 200px; border: 1px solid red;" onmouseover="this.style.backgroundColor='lightblue'" onmouseout="this.style.backgroundColor='orange'">
+        Demo text
+
+     </div>
+</body>
+</html>

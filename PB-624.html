@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML='HELLO WORLD';this.style.fontStyle='italic';this.style.fontSize='50px'">
+        this is the end
+    </h1>
+    <button onclick="fun1()" id="id1">red</button>
+     <button onclick="fun2()" id="id2">blue</button>
+    <script>
+        let fun1=()=>{
+            var x=document.getElementById("id1");
+            x.style.color="red"; 
+        }
+   
+        let fun2=()=>{
+            var y=document.getElementById("id2");
+            y.style.color="blue"; 
+        }
+    </script>
+</body>
+</html>
